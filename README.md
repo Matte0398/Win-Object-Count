@@ -1,6 +1,10 @@
 # WinObjectCount
-A PowerShell script that it verifies the existence of an object (file or directory) under a path. It goes in alarm when the object exists and it is more old than N day
-<hr>
 
-### USAGE
-&nbsp;&nbsp; ``` powershell.exe .\objectCount.ps1 -P [object_path] -D [N_day] ```
+PowerShell script that checks whether a file or directory exists under a given path.
+
+The script can be used for monitoring purposes and can trigger an alert when the object exists and is older than a defined number of days.
+
+## Usage
+
+```powershell
+powershell.exe .\objectCount.ps1 -P [object_path] -D [days]
