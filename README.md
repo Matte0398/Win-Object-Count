@@ -1,4 +1,4 @@
-# WinObjectCount
+# Win-Object-Count
 
 PowerShell script that checks whether a file or directory exists under a given path.
 
