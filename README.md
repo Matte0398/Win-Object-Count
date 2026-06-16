@@ -1,10 +1,24 @@
 # Win-Object-Count
 
-PowerShell script that checks whether a file or directory exists under a given path.
+PowerShell utility that checks whether a file or directory exists under a given path and verifies its age.
 
-The script can be used for monitoring purposes and can trigger an alert when the object exists and is older than a defined number of days.
+This script can be used for monitoring purposes, for example as a Zabbix custom check, to detect files or directories older than a defined number of days.
+
+## Features
+
+- Checks files and directories
+- Supports custom paths
+- Verifies object age
+- Useful for monitoring stale files, old exports or delayed jobs
+- Can be integrated with Zabbix UserParameters
 
 ## Usage
 
 ```powershell
 powershell.exe .\objectCount.ps1 -P [object_path] -D [days]
+```
+
+## Example
+
+```powershell
+powershell.exe .\objectCount.ps1 -P "C:\Exports\report.csv" -D 2
